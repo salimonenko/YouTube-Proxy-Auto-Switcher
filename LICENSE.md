@@ -1,6 +1,6 @@
 MIT License
 
-Copyright 2026 Salimonenko Dmitry Alexandrovich (Салимоненко Дмитрий Александрович"
+Copyright 2026 Salimonenko Dmitry Alexandrovich (Салимоненко Дмитрий Александрович)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Additional Notice (Commercial Use):
+The permission granted above is expressly conditioned upon the use not being primarily intended for or directed toward commercial advantage or monetary compensation. For commercial use, a separate written license agreement must be obtained from the copyright holder.
