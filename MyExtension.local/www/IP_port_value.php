@@ -11,7 +11,7 @@ $index_file = 'index.txt';
 // Устанавливаем заголовок ответа: простой текст
 header('Content-Type: text/plain');
 
-// Согласно ТЗ: API принимает только POST запросы
+// API принимает только POST запросы
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('HTTP/1.1 405 Method Not Allowed');
     echo "Only POST requests are allowed";
@@ -36,7 +36,7 @@ $proxies = file($proxy_list_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES)
 
 // 3. Проверяем, не вышли ли мы за пределы списка
 if ($currentIndex >= count($proxies)) {
-    // Согласно ТЗ: отсутствие доступных прокси — HTTP 406
+    // Отсутствие доступных прокси — HTTP 406
     header('HTTP/1.1 406 Not Acceptable');
     
     // Сбрасываем индекс в 0, чтобы список начался заново при следующем запросе
