@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Proxy Auto-Switcher for YouTube",
+  "version": "1.0",
+  "description": "Автоматическая проверка и смена прокси-серверов для стабильного просмотра YouTube",
+  "permissions": [
+    "proxy", // меняет прокси, через который идут все данные браузера, в зависимости от того, какой сайт открыт.
+    "storage", 
+    "webRequest",
+    "tabs"
+  ],
+  "host_permissions": [ // определяют, где работает content.js и куда может слать запросы fetch.
+    "http://myextension.local:8000/*", 
+    "https://www.youtube.com/*",
+	"https://googlevideo.com/*",
+	"https://ytimg.com/*",
+	"https://ggpht.com/*",
+	"https://youtube-nocookie.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
