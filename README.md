@@ -51,12 +51,15 @@ A Microsoft Edge browser extension (Manifest V3) that automatically retrieves pr
 
 В `background.js`:
 
-```js
+
+## Настройка API
+
+
+``js
 const API_URL = 'http://myextension.local:8000/IP_port_value.php';
 API должен принимать POST и возвращать:
 200 + текстовую строку IP:port — очередной прокси;
 406 — список исчерпан.
-
 
 ## Разрешения (из файла manifest.json):
 
